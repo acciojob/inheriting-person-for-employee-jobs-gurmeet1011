@@ -5,7 +5,7 @@ function Person(name, age) {
 }
 
 Person.prototype.greet = function () {
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 };
 
 // Define the Employee class, inheriting from Person
@@ -26,12 +26,11 @@ Employee.prototype.jobGreet = function () {
 
 // Create an Employee instance
 const bob = new Employee("Bob", 30, "Manager");
-const alice=new Person("Alice",25)
-alice.greet();
+const alice = new Person("Alice", 25);
+
+alice.greet();  // Correct greet format
 bob.jobGreet(); 
 
-Window.Person=Person;
-Window.Employee=Employee;
 
 
 
