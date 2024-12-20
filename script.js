@@ -27,7 +27,7 @@ Employee.prototype.jobGreet = function () {
 // Create an Employee instance
 const bob = new Employee("Bob", 30, "Manager");
 const alice=new Person("Alice",25)
-Person.greet();
+alice.greet();
 bob.jobGreet(); 
 
 Window.Person=Person;
